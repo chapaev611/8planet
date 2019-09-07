@@ -1,0 +1,171 @@
+/*=============================================
+=                   F o n t s                 =
+=============================================*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:700');
+
+
+
+html {
+    display: block !important;
+    background: #fff;
+    font-size: 16px;
+    line-height: 1.4;
+    -webkit-font-smoothing: antialiased;
+
+    &.mobile-overflow {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        //overflow: hidden;
+    }
+}
+
+body {
+    position: relative;
+    overflow-x: hidden;
+
+    font-family: $Roboto;
+
+    &.mobile-overflow {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        overflow-y: scroll;
+    }
+
+    &.is-grid::after {
+        content:'';
+        position:absolute;
+        z-index:1000;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        opacity:0.15;
+        background-image: repeating-linear-gradient(90deg, transparent 0px, transparent 8.333333%, #00f 8.333333%, #00f 16.666666%);
+        pointer-events:none;
+
+        @include mq(767px) {
+            background-image: repeating-linear-gradient(90deg, transparent 0px, transparent 16.666666%, #00f 16.666666%, #00f 33.333333%);
+        }
+    }
+}
+
+main {
+    position:relative;
+    left:0;
+    overflow:hidden;
+    transition: left 0.25s $easeInQuart;
+
+    @include mq(768, 9999) {
+        &.is-shift {
+            left:-8.33%;
+            transition: left 0.75s $easeOutQuart;
+        }
+    }
+}
+
+.container {
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+
+    @include mq(240, 576) {
+        padding: 0 15px;
+    }
+
+    @include mq(576, 768) {
+        max-width: 540px;
+        padding: 0 20px;
+    }
+
+    @include mq(768, 992) {
+        max-width: 720px;
+    }  
+
+    @include mq(992, 1230) {
+        max-width: 960px;
+        padding: 0 15px;
+    }    
+
+    @include mq(1230, 1470) {
+        max-width: 1200px;
+    }   
+    
+    @include mq(1470, 9999) {
+        max-width: 1440px;
+    }   
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    transition: color .35s ease-in-out;
+}
+
+input, select, button {
+    -webkit-appearance: none;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.dont-show-me {
+    height: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: hidden !important;
+}
+
+.error-message {
+    position: absolute;
+    top: 6px;
+    right: 15px;
+
+    @include mq(767) {
+        position: static;
+    }
+
+    .is-error {
+        font-family: $Roboto;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 30px;
+        color: $color_pink;
+    }
+}
+
+.visually-hidden {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    clip: rect(1px 1px 1px 1px);;
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
+
+button {
+	-webkit-appearance: none;
+	border-radius: 0;
+}
+
+.svg-animation-path {
+    path {
+        transition: stroke-dashoffset 1s $easeInOutCirc;
+    }
+}

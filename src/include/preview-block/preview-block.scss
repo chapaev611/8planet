@@ -1,0 +1,96 @@
+.preview-block {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 156px 19% 120px;
+
+    @include mq(1230, 1470) {
+        padding: 156px 0 120px;
+    }
+
+    @include mq(1230) {
+        padding: 70px 0;
+    }   
+
+    @include mq(576) {
+        padding: 57px 0 122px;
+    }
+
+    &__title {
+        margin: 0 0 49px;
+        font-family: $Roboto_Condensed;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 1.1;
+        color: $color_white;
+
+        @include mq(1230) {
+            margin: 0 0 35px;
+            font-size: 48px;
+        }   
+
+        @include mq(992) {
+            margin: 0 0 20px;
+            font-size: 36px;
+        }   
+
+        @include mq(576) {
+            margin: 0 0 36px;
+            font-size: 40px;
+            line-height: 1.18;
+        }
+
+        span {
+            position: relative;
+            display: table;
+            z-index: 1;
+
+            @include mq(576) {
+                display: inline;
+                border-bottom: 7px solid $color_blue4;
+            }
+
+            &::before {
+                content: '';
+                z-index: -1;
+                position: absolute;
+                bottom: -7px;
+                left: 0;
+                width: 100%;
+                height: 11px;
+                background: $color_blue4;
+
+                @include mq(992) {
+                    bottom: -1px;
+                    height: 5px;
+                }   
+
+                @include mq(576) {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    &__desc {
+        margin: 0 0 25px;
+        font-family: $Roboto;
+        font-size: 36px;
+        font-weight: 400;
+        color: $color_white;
+
+        @include mq(1230) {
+            font-size: 26px;
+        } 
+
+        @include mq(992) {
+            font-size: 22px;
+            margin: 0 0 15px;
+        } 
+
+        @include mq(576) {
+            max-width: 228px;
+            line-height: 1.45;
+        }
+    }
+}

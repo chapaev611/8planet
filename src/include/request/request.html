@@ -1,0 +1,37 @@
+<div class="request">
+    <div class="container">
+        <h2 class="request__title title">Оставить заявку</h2>
+
+        <form method="get" action="/json/response200.json" class="request__form form js-validate js-form">
+            <div class="form__group js-parent-input-error">
+                <input type="text" name="user-name" class="form__input js-letter-input" id="form-question-user-name" autocomplete="off" data-rule-minlength="2" data-rule-required="true" data-msg-required="Укажите ваше имя" required />
+                <label class="form__label" for="form-question-user-name">Представьтесь</label>
+                <div class="error-message"></div>
+            </div>
+            <div class="form__group js-parent-input-error">
+                <input name="user-phone" type="tel" class="form__input" id="form-question-user-phone" autocomplete="off" data-rule-realphone="true" data-rule-required="true" data-rule-minlength="18" data-msg-required="Укажите ваш телефон" data-msg-minlength="Укажите ваш телефон" required>
+                <label class="form__label" for="form-question-user-phone">Телефон для связи</label>
+                <div class="error-message"></div>
+            </div>
+
+            <div class="form__recapcha">
+                <div class="g-recaptcha" data-sitekey="6LdKCLcUAAAAAJEAcc96rsCYh7_Sl916tiZn_YMr"></div>
+                <!-- элемент для вывода ошибок -->
+                <div class="text-danger" id="recaptchaError"></div>
+            </div>
+
+            <button type="submit" class="form__button button button--white js-submit">Отправить</button>
+            <div class="form__input-float js-parent-input-error">
+                <input class="visually-hidden" type="checkbox" name="checkbox" id="form-question-checkbox" data-rule-required="true" checked="" aria-required="true" data-msg-required="Необходимо согласие">
+                <label class="checkbox js-parent-input-error" for="form-question-checkbox">
+                    <span class="checkbox-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M8.41,14a.83.83,0,0,1-.54-.19l-3.59-3A.76.76,0,0,1,4.2,9.72a.85.85,0,0,1,1.17-.08l3,2.49,6.22-5.9a.85.85,0,0,1,1.17,0,.77.77,0,0,1,0,1.12L9,13.77A.85.85,0,0,1,8.41,14Z" fill="#191919"/></svg>
+                    </span>
+                    <span>Нажимая кнопку «Отправить», я даю свое согласие на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ</span>
+                </label>
+                <div class="error-message"></div>
+            </div>
+            
+        </form>
+    </div>
+</div>

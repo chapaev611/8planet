@@ -1,0 +1,18 @@
+<div class="contacts js-anchor-object" data-anchor-object="contacts">
+    <div class="container">
+        <div class="contacts__block">
+            <h2 class="contacts__title title">Контакты</h2>
+            <div class="contacts__list">
+                {{#each contacts.contacts}}
+                    <div class="contacts__item">
+                        <h5 class="contacts__name">{{this.name}}</h5>
+                        <p class="contacts__desc">{{this.desc}}</p>
+                    </div>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+    <div class="contacts__map-block js-yandex-map" data-lat="55.027928" data-lng="37.406064" data-zoom="16">
+        <div id="yandex-map" class="contacts__map"></div>
+    </div>
+</div>

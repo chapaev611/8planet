@@ -1,0 +1,13 @@
+.phone-block {
+    padding: 25px 0 20px;
+    text-align: center;
+
+    &__phone {
+        font-family: 'Roboto Condensed', sans-serif;;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 1;
+        letter-spacing: 1.2px;
+        color: $color_black3;
+    }
+}

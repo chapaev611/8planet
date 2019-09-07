@@ -1,0 +1,29 @@
+.request {
+    position: relative;
+    padding: 60px 0 74px;
+    text-align: center;
+    background: $color_blue5;
+
+    @include mq(1470) {
+        padding: 60px 0 56px;
+    }
+
+    @include mq(767) {
+        padding: 40px 0;
+    }
+
+    .container {
+        @include mq(1470, 9999) {
+            padding: 0;
+        }
+    }
+
+    &__title {
+        margin: 0 0 45px;
+        color: $color_white;
+
+        @include mq(767) {
+            margin: 0 0 30px;
+        }
+    }
+}

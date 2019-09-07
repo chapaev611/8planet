@@ -1,0 +1,158 @@
+.table {
+    padding: 0 9% 40px;
+    text-align: left;
+
+    @include mq(1470) {
+        padding: 0 12px 40px;
+    }
+
+    @include mq(992) {
+        padding: 0 0 40px;
+    }
+
+    &__row {
+        font-size: 0;
+        padding: 5px 0;
+        border-bottom: 1px solid $color_gray6;
+
+        @include mq(992) {
+            text-align: center;
+        }
+
+        @include mq(767) {
+            padding: 5px 5%;
+        }
+
+        &:not(.table__row--header) {
+            .table__cell {
+            
+                &:first-child > .table__text {
+                    @include mq(767) {
+                        padding: 0;
+                    }
+
+                    @include mq(576) {
+                        text-align: left;
+                    }
+                }
+
+                &:nth-child(3) {
+                    @include mq(767) {
+                        text-align: center;
+                    }
+
+                    @include mq(576) {
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    
+        &--header {
+            padding: 42px 0 3px;
+            border-bottom: 3px solid $color_blue3;
+
+            @include mq(992) {
+                padding: 30px 0 3px;
+            }
+
+            @include mq(767) {
+                padding: 15px 3%;
+            }
+
+            @include mq(576) {
+                padding: 15px 0;
+            }
+    
+            .table__text {
+                font-family: $Roboto_Condensed;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 25px;
+                text-transform: uppercase;
+                letter-spacing: 2.4px;
+                color: $color_blue3;
+
+                @include mq(767) {
+                    font-size: 10px;
+                    font-weight: 700;
+                    line-height: 15px;
+                    text-transform: uppercase;
+                    letter-spacing: 0.6px;
+                }
+
+                @include mq(310, 375) {
+                    max-width: 100px;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+    
+    &__cell {
+        display: inline-block;
+        vertical-align: middle;
+
+        &:nth-child(1) {
+            width: 52.5%;
+
+            @include mq(1470) {
+                width: 54.5%;
+            }
+
+            @include mq(1230) {
+                width: 51%;
+            }
+    
+            @include mq(992) {
+                width: 33.3%;
+            }
+    
+            .table__text {
+                text-transform: uppercase;
+            }
+        }
+    
+        &:nth-child(2) {
+            width: 30.7%;
+
+            @include mq(1470) {
+                width: 27.7%;
+            }
+
+            @include mq(992) {
+                width: 33.3%;
+            }    
+        }
+
+        &:nth-child(3) {
+            width: auto;
+
+            @include mq(992) {
+                width: 33.3%;
+            }
+    
+            .table__text {
+                font-weight: 700;
+            }
+        }
+    }
+    
+    &__text {
+        font-family: $Roboto;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 40px;
+        color: $color_gray5;
+
+        @include mq(767) {
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 40px;
+        }
+
+        sup {
+            font-size: 10px;
+        }
+    }
+}

@@ -1,0 +1,71 @@
+.anchors {
+    z-index: 5;
+    padding: 14px 0;
+    text-align: center;
+    background: $color_gray;
+
+
+    @include mq(991) {
+        padding: 0 20px;
+        background: transparent;
+    }
+
+    &__list {
+        list-style-type: none;
+        font-size: 0;
+        padding: 0;
+        margin: 0;
+        transition: transform .5s ease-in-out;
+    }
+
+    &__item {
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 22px;
+        transition: margin .5s ease-in-out;
+
+        @include mq(1230, 1470) {
+            margin: 0 24px;
+        }
+
+        @include mq(991) {
+            display: block;
+            margin: 0 0 30px;
+        }
+
+        &:last-child{
+            @include mq(1470, 9999) {
+                margin-right: 0;
+            } 
+
+            @include mq(991) {
+                margin-bottom: 41px;
+            }
+        }
+
+        &.is-active .anchors__link  {
+            color: $color_blue;
+        }
+    }
+
+    &__link {
+        font-family: $Roboto_Condensed;
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.64px;
+        color: $color_black2;
+        outline: none;
+
+        &:hover {
+            color: $color_blue;
+        }
+
+        @include mq(991) {
+            color: $color_white;
+            font-size: 22px;
+            line-height: 1;
+            letter-spacing: 0.88px;
+        }
+    }
+}

@@ -1,0 +1,41 @@
+.footer-bottom {
+    padding: 22px 0 18px;
+    background: $color_black8;
+
+    @include mq(767) {
+        padding: 20px 0;
+    }
+
+    &__text {
+        display: flex;
+        font-family: $Roboto;
+        font-size: 14px;
+        font-weight: 400;
+        color: rgba($color_white, 0.21);
+
+        @include mq(767) {
+            display: block;
+        }
+
+        span {
+            display: inline-block;
+            vertical-align: middle;
+
+            &:first-child {
+                margin: 0 30px 0 0;
+
+                @include mq(767) {
+                    margin: 0;
+                }
+            }
+
+            &:last-child {
+                margin: 0 0 0 auto;
+
+                @include mq(767) {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

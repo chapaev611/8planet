@@ -1,0 +1,204 @@
+.svg-address {
+    width: 23px;
+    height: 20px;
+}
+
+.svg-email {
+    width: 23px;
+    height: 15px;
+}
+.svg-address, .svg-email {
+    margin: 0 8px 0 0;
+
+    .cls-1, .cls-3 {
+        fill: none;
+    }
+    .cls-2 {
+        clip-path: url(#clip-path);
+    }
+    .cls-3 { 
+        stroke: $color_gray2;
+        stroke-miterlimit: 10;
+        stroke-width: 1.4px;
+    }
+    .cls-4 { 
+        fill: $color_gray2;
+    }
+}
+
+.svg-message {
+    width: 29px;
+    height: 21px;
+
+    .cls-1, .cls-3 {
+        fill: none;
+    }
+    .cls-2 {
+        clip-path: url(#clip-path);
+    }
+    .cls-3 { 
+        stroke: $color_white;
+        stroke-miterlimit: 10;
+        stroke-width: 1.4px;
+    }
+}
+
+.svg-advantages-1 {
+    width: 57px;
+    height: 78px;
+
+    .cls-3 {
+        fill: none;
+        stroke-miterlimit: 10;
+        stroke-width: 4.84px;
+        stroke: $color_blue3;
+    }
+    .cls-2 {
+        clip-path: url(#clip-path);
+    }
+}
+
+.svg-advantages-2 {
+    width: 57px;
+    height: 81px;
+
+    .cls-1, .cls-3 {
+        fill: none;
+    }
+    .cls-2 {
+        clip-path: url(#clip-path);
+    }
+    .cls-3 {
+        stroke: $color_blue3;
+        stroke-miterlimit: 10;
+        stroke-width: 5px;
+    }
+}
+
+.svg-advantages-3 {
+    width: 81px;
+    height: 81px;
+    
+    .cls-1 {
+        fill: none;
+    }
+    .cls-2 {
+        clip-path: url(#clip-path);
+        fill: $color_blue3;
+    }
+}
+
+.svg-advantages-4 {
+    width: 66px;
+    height: 66px;
+    
+    .cls-1, .cls-3 {
+        fill: none;
+    }
+    .cls-2 {
+        clip-path: url(#clip-path);
+    }
+    .cls-3 {
+        stroke: $color_blue3;
+        stroke-miterlimit: 10;
+        stroke-width: 5px;
+    }
+}
+
+.svg-car {
+    width: 121px;
+    height: 79px;
+
+    .cls-1, .cls-3 {
+        fill: none;
+    }
+    .cls-2 {
+        clip-path: url(#clip-path);
+    }
+    .cls-3 {
+        stroke: $color_white;
+        stroke-miterlimit: 10;
+        stroke-width: 4px;
+    }
+}
+
+.svg-clock {
+    width: 44px;
+    height: 41px;
+
+    .cls-1, .cls-3, .cls-5 {
+        fill: none;
+    }
+
+    .cls-2 {
+        clip-path: url(#clip-path);
+    }
+
+    .cls-3, .cls-5 {
+        stroke: $color_white;
+        stroke-miterlimit: 10;
+        stroke-width: 4px;
+    }
+
+    .cls-3 {
+        stroke-width: 4px;
+    }
+
+    .cls-4 {
+        fill: $color_white;
+        font-size: 21.91px;
+        font-family: $Ubuntu; 
+        font-weight: 700;
+    }
+
+    .cls-5 {
+        stroke-width: 3px;
+    }
+}
+
+
+.svg-flajok,
+.svg-phone {
+    width: 11px;
+    height: 15px;
+}
+
+.svg-mess {
+    width: 14px;
+    height: 11px;
+
+    .cls-1, .cls-3 {
+        fill: none;
+    }
+    // .cls-2 {
+    //     clip-path: url(#clip-path);
+    // }
+
+    .cls-3 {
+        stroke: #828281;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+    }
+}
+
+.svg-flajok,
+.svg-phone {
+
+    .cls-1, .cls-3 {
+        fill: none;
+    }
+
+    .cls-2 {
+        clip-path: url(#clip-path);
+    }
+    .cls-3 {
+        stroke: #828281;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+    }
+    .cls-4 { 
+        fill:#828281;
+    }
+}

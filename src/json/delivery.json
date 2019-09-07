@@ -1,0 +1,34 @@
+{
+    "table": [
+        {
+            "distance": "5",
+            "priceCube7": "2000",
+            "priceCube9": "2700"
+        },
+        {
+            "distance": "15",
+            "priceCube7": "2500",
+            "priceCube9": "3250"
+        },
+        {
+            "distance": "25",
+            "priceCube7": "3000",
+            "priceCube9": "3800"
+        },
+        {
+            "distance": "35",
+            "priceCube7": "4000",
+            "priceCube9": "5000"
+        },
+        {
+            "distance": "45",
+            "priceCube7": "5000",
+            "priceCube9": "6200"
+        },
+        {
+            "distance": "55",
+            "priceCube7": "6000",
+            "priceCube9": "7500"
+        }
+    ]
+}

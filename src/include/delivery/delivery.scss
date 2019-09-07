@@ -1,0 +1,20 @@
+.delivery {
+    text-align: center;
+
+    &__title {
+        position: relative;
+        padding: 41px 0 37px;
+        background: $color_gray7;
+
+        @include mq(992) {
+            padding: 30px 0;
+        }
+    }
+
+    .container {
+        @include mq(767) {
+            padding: 0;
+        }
+    }
+
+}
